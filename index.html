@@ -5,7 +5,7 @@
 <style>
 body{
 background-image:linear-gradient(yellow 0%,yellow 50%,blue 50%,blue 100%);
-height:1080px;
+height:100vh;
 }
 .main{
 height:400px;
@@ -13,7 +13,8 @@ width:270px;
  background:white;
  border-radius:5px;
  position: absolute;
-margin-top:300px;
+margin-top:10%;
+margin-left: 30%;
 border:1px solid silver;
  overflow:hidden;
 }
@@ -33,33 +34,37 @@ border-radius:2px;
 .t1,.t2,.t3{
 font-size:25px;
 font-weight:bold;
+color: blue;
  }
 .t3{
 color:white;
-
 }
 .titles{
  margin-left:300px;
-margin-top:420px;
+margin-top:14%;
  position: absolute;
+ margin-left: 55%;
+
  }
 .ac{
- height:25px;
- background:silver;
- font-size:20px;
- color:black;
+height:25px;
+font-size:15px;
+padding: 0px 5px 2px 5px;
+color:black;
 font-weight:400;
 margin:10px 5px 10px 5px;
-box-shadow:3px 3px 6px grey;
+border:2px solid blue;
+border-radius: 3px;
+line-height: 2px;
  }
  .e_btn{
  height:25px;
- 
  color:white;
  background:olive;
  border:none;
  border-radius:2px;
  margin-top: -5px ;
+ margin-bottom: 2px;
  }
 .d_btn{
  height:25px;
@@ -69,7 +74,10 @@ box-shadow:3px 3px 6px grey;
  border:none;
  border-radius:2px;
  margin-top: -5px ;
- 
+ }
+
+ #tfid{
+   border: none;
  }
 
 </style>
@@ -78,12 +86,12 @@ box-shadow:3px 3px 6px grey;
 <body>
 <div class="main" id="main">
  <input type="search" placeholder="Type here" id="ip">
-   <button id="btn" onclick="getdata()"> ADD </button>
+   <button id="btn" onclick="getdata()"> ADD </button> <br>
 </div>
  <div class="titles">
 <p class="t1"> Write Source Code</p>
 <p class="t2"> LINK TO LEARN</p>
-<p class="t3"> HTML,CSS,Javascript</p>
+<p class="t3"> HTML,CSS,JavaScript</p>
 </div>
 
 <script>
@@ -93,7 +101,7 @@ const dv=document.getElementById("main");
 const inp=document.createElement("input");
  inp.setAttribute("type","radio");
  inp.setAttribute("id","d_inp");
-const lab=document.createElement("lab");
+const lab=document.createElement("label");
  const edit=document.createElement("button");
   edit.onclick=function(){
  const tf=document.createElement("input");
